@@ -37,25 +37,25 @@ Visualization of:
 - Matplotlib
 
 # How It Works
-- Simulated Motion: A synthetic motion profile is generated with sinusoidal acceleration and a sudden "fall" (drop) at a specified time.
+1) Simulated Motion: A synthetic motion profile is generated with sinusoidal acceleration and a sudden "fall" (drop) at a specified time.
 
-- Sensor Noise:
+2) Sensor Noise:
 
-Acceleration readings are noisy.
+- Acceleration readings are noisy.
 
-Position updates occur every 1 second and include noise.
+- Position updates occur every 1 second and include noise.
 
-- Kalman Filter:
+3)Kalman Filter:
 
-  Uses a constant acceleration (PVA) model.
+- Uses a constant acceleration (PVA) model.
 
-  Estimates the full state vector: [position, velocity, acceleration].
+- Estimates the full state vector: [position, velocity, acceleration].
 
-- Fall Detection:
+4) Fall Detection:
 
-  If estimated acceleration < -5 m/s² → fall is flagged.
+- If estimated acceleration < -5 m/s² → fall is flagged.
 
-  Detected fall is shown on the plot with a vertical red line.
+- Detected fall is shown on the plot with a vertical red line.
 
 
 # Concepts Covered

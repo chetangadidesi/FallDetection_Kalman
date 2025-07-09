@@ -1,6 +1,7 @@
 # FallDetection_Kalman
 This project simulates a fall detection system inspired by smartwatches like Garmin or Apple Watch. It uses a Kalman Filter to estimate position, velocity, and acceleration from noisy sensor data, and detects falls based on a sudden drop in the estimated acceleration.
 
+<img src = "fall_detection.png"> 
 # Project Summary
 Goal: Estimate a person’s motion in real-time and detect a fall event using simulated sensor data.
 
